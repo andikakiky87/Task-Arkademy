@@ -19,4 +19,4 @@ const { address } = data;
 const { street, city } = address
 console.log(newName)
 // console.log(address)
-console.log(street, city)
+console.log(`Street: ${street} City: ${city}`)
