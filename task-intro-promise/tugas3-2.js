@@ -14,10 +14,9 @@ const cekGaji = (user) => {
     })
 }
 
-const displayGaji = async (data, day) => {
+const displayGaji = async (data,gaji, day) => {
     try {
         const dt = await cekGaji(data)
-        const gaji = 5
         const cek = gaji * day
         console.log(`Gaji ${dt} dalam ${day} jam sebesar ${cek} dollar`);
     } catch (err) {
@@ -25,4 +24,4 @@ const displayGaji = async (data, day) => {
     }
 }
 
-displayGaji('joni', 22)
+displayGaji('joni', 24 , 22)

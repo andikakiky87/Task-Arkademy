@@ -17,4 +17,4 @@ const cek = (input) => {
         .catch(err => console.log(err))
 }
 
-cek(10)
+cek(5)
