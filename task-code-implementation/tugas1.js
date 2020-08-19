@@ -10,6 +10,8 @@ const cekPal = (x) => {
     }
 }
 
-cekPal('MadAm')
+cekPal('MALam')
+
+
 
 

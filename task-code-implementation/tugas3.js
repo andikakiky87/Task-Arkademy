@@ -1,15 +1,16 @@
 const divideAndSort = (data) => {
-    const arr = data.toString().split('0')
-    const baru = arr.map((item) => {
-        const cek = Array.from(String(item), Number);
-        const dataa = cek.sort((a, b) => {
-            return a - b
+    if (typeof data !== 'number') {
+        console.log('Please input Number');
+    } else {
+        const arr = data.toString().split('0')
+        const baru = arr.map((item) => {
+            const dataa = item.split('').sort().join('')
+            return dataa
         })
-        return dataa
-    })
-    const dataku = [].concat.apply([], baru).join('')
-    const num = parseInt(dataku)
-    console.log(num);
+        const dataku = baru.join('')
+        const num = parseInt(dataku)
+        console.log(num);
+    }
 }
 
-divideAndSort(5956560159466056)
+divideAndSort(85649058511056)
