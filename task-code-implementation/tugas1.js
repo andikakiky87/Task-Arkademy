@@ -1,16 +1,20 @@
 const cekPal = (x) => {
-    const data = x.toLowerCase()
-    const call = data.split('')
-    console.log(call);
-    const rev = call.reverse().join('')
-    if (rev == data) {
-        console.log(`${x} adalah Palindrom`);
+    if (typeof x !== 'string' || x === undefined) {
+        console.log('Please input String');
     } else {
-        console.log(`${x} bukan Palindrom`);
+        const data = x.toLowerCase()
+        const call = data.split('')
+        // console.log(call);
+        const rev = call.reverse().join('')
+        if (rev == data) {
+            console.log(`Palindrom`);
+        } else {
+            console.log(`bukan Palindrom`);
+        }
     }
 }
 
-cekPal('MALam')
+cekPal(12)
 
 
 
